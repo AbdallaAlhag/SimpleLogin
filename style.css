@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .container {
@@ -22,11 +22,12 @@ body {
     flex: 1;
     padding: 0;
     position: relative;
+    background-color: #0074D9;
 }
 
 .left-side img {
-    max-width: 50vw;
-    height: auto;
+    width: 100%;
+    max-height: 100vw;
     display: block;
 }
 
@@ -42,36 +43,50 @@ body {
 }
 
 .right-side {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
     max-width: 50vw;
-    height: 40vh;
-    background-color: white;
+    height: 100%;
+    background-color: #f2f2f2;
 }
 .info {
     font-weight: bold;
+    margin-left: 5%;
 }
+
 
 form {
-
-    max-width: 100%;
+    width: 100%;
     max-height: 75%;
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    /* margin: 0 auto; */
+    background-color:#fafafa;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 1); */
+    box-shadow: 5px 10px 5px 0px rgba(211,211,211,0.75);
+    -webkit-box-shadow: 5px 10px 5px 0px rgba(211,211,211,0.75);
+    -moz-box-shadow: 5px 10px 5px 0px rgba(211,211,211,0.75);
 }
 
+form p{
+    margin-left: 5%;
+}
 .form-row {
     display: flex;
-    justify-content: start;
-    margin-bottom: 10px;
+    /* justify-content: space; */
+    justify-content: space-between;
+    margin-bottom: 10%;
     margin-right: 10%;
+    margin-left: 5%;
 }
 
 .form-column {
     flex: 1;
-    margin-right: 1px;
+    margin-right: 1000px;
+    width: 48%;
+    margin-bottom: 1000px;
 } 
 
 label {
@@ -149,6 +164,9 @@ a:hover {
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
+
+  margin-left: 5%;
+  margin-bottom: 10%;
 }
 
 .button:focus:not(:focus-visible):not(.focus-visible) {
